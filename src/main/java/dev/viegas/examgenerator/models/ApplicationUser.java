@@ -1,4 +1,4 @@
-package dev.viegas.examgenerator.model;
+package dev.viegas.examgenerator.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -22,11 +22,11 @@ public class ApplicationUser {
     public ApplicationUser() {
     }
 
-    public ApplicationUser(Long id, String username, String password, Professor professor) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.professor = professor;
+    public ApplicationUser(ApplicationUser applicationUser) {
+        this.id = applicationUser.id;
+        this.username = applicationUser.username;
+        this.password = applicationUser.password;
+        this.professor = applicationUser.professor;
     }
 
     public Long getId() {

@@ -1,4 +1,4 @@
-package dev.viegas.examgenerator.model;
+package dev.viegas.examgenerator.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
